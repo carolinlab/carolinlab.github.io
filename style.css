@@ -139,8 +139,8 @@ nav a:hover {
     background: white;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 12px 35px rgba(0, 40, 80, 0.08);
+    border: 1px solid rgba(20, 80, 140, 0.08);
     transition: 0.3s;
 }
 
