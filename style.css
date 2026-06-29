@@ -64,11 +64,6 @@ nav a:hover {
     justify-content: center;
     padding: 120px 80px;
 }
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 120px 80px;
-}
 
 .hero-container {
     display: flex;
