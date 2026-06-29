@@ -84,12 +84,12 @@ nav a:hover {
 }
 
 .hero-image img {
-    width: 380px;
-    height: 380px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     object-fit: cover;
-    border: 6px solid rgba(255,255,255,0.6);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    border: 4px solid rgba(255,255,255,0.25);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.35);
 }
 
 /* BUTTON */
