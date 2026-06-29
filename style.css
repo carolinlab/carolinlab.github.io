@@ -10,7 +10,12 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(to bottom, #eaf8ff, #b9def5);
+    background: linear-gradient(
+        180deg,
+        #eef9ff 0%,
+        #d8efff 45%,
+        #c2def2 100%
+    );
     color: #0f2740;
 }
 
@@ -24,9 +29,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255,255,255,0.25);
-    backdrop-filter: blur(16px);
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
 }
 
 .logo {
@@ -49,14 +56,19 @@ nav a {
 }
 
 nav a:hover {
-    color: #2c78b3;
+    color: #2b6d9f;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, #A8D8F0, #6CAED9);
+    background: linear-gradient(
+        135deg,
+        #d8f1ff 0%,
+        #a8d8f0 45%,
+        #6caed9 100%
+    );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,10 +118,10 @@ nav a:hover {
     height: 420px;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid rgba(255,255,255,0.5);
+    border: 6px solid rgba(255,255,255,0.45);
     box-shadow:
-        0 0 40px rgba(255,255,255,0.4),
-        0 0 100px rgba(72,156,214,0.5);
+        0 0 30px rgba(255,255,255,0.3),
+        0 0 70px rgba(108,174,217,0.28);
 }
 
 /* BUTTON */
@@ -118,15 +130,16 @@ nav a:hover {
     display: inline-block;
     padding: 16px 32px;
     border-radius: 999px;
-    background: white;
+    background: rgba(255,255,255,0.85);
     color: #0f2740;
     text-decoration: none;
     font-weight: 700;
     transition: 0.3s;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
 .btn:hover {
-    transform: scale(1.05);
+    transform: translateY(-2px) scale(1.02);
 }
 
 /* SECTIONS */
@@ -156,17 +169,19 @@ nav a:hover {
 .card {
     flex: 1;
     min-width: 280px;
-    background: rgba(255,255,255,0.25);
-    border: 1px solid rgba(255,255,255,0.4);
-    backdrop-filter: blur(18px);
+    background: rgba(255,255,255,0.22);
+    border: 1px solid rgba(255,255,255,0.35);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
     padding: 25px;
     border-radius: 24px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-    transition: 0.4s;
+    box-shadow: 0 12px 35px rgba(15,39,64,0.08);
+    transition: 0.35s ease;
 }
 
 .card:hover {
     transform: translateY(-12px);
+    box-shadow: 0 18px 45px rgba(15,39,64,0.12);
 }
 
 .card img {
@@ -185,10 +200,11 @@ nav a:hover {
 
 .contact-box {
     max-width: 600px;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.28);
     padding: 40px;
     border-radius: 24px;
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 10px 30px rgba(15,39,64,0.08);
 }
 
 .contact-box p {
