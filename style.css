@@ -51,14 +51,15 @@ nav a:hover {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 140px 80px 80px;
-    background: linear-gradient(135deg, #6CAED9, #A8D8F0);
+    padding: 120px 80px 80px;
+    background: linear-gradient(135deg, #0b2a4a, #1d5f8a, #3aa0c9);
+    color: white;
 }
 
 .hero-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 1200px;
     margin: auto;
