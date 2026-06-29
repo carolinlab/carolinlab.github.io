@@ -58,12 +58,12 @@ nav a:hover {
 
 .hero {
     min-height: 100vh;
-    background: linear-gradient(
-        135deg,
-        #d8f1ff 0%,
-        #a8d8f0 45%,
-        #6caed9 100%
-    );
+    background: linear-gradient(135deg, #A8D8F0, #6CAED9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 80px;
+}
     display: flex;
     align-items: center;
     justify-content: center;
