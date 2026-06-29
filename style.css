@@ -1,59 +1,95 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f9fc;
-    color: #1e293b;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-header {
-    background: linear-gradient(135deg, #0f172a, #2563eb);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
+body{
+  font-family:'Inter',sans-serif;
+  background:#07111f;
+  color:white;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 3rem;
+nav{
+  position:fixed;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:25px 60px;
+  background:rgba(0,0,0,0.25);
+  backdrop-filter:blur(10px);
+  z-index:100;
 }
 
-header p {
-    font-size: 1.2rem;
-    opacity: 0.9;
+nav ul{
+  display:flex;
+  gap:30px;
+  list-style:none;
 }
 
-section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
+nav a{
+  color:white;
+  text-decoration:none;
 }
 
-.card {
-    background: white;
-    padding: 25px;
-    margin: 20px 0;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
+.logo{
+  font-weight:800;
+  color:#6ee7ff;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.hero{
+  height:100vh;
+  background:
+    radial-gradient(circle at top right,#1d4ed8,#07111f 60%);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
 }
 
-h2 {
-    color: #2563eb;
+.hero h1{
+  font-size:5rem;
+  font-weight:800;
+  margin-bottom:20px;
 }
 
-button {
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 10px;
-    cursor: pointer;
+.hero p{
+  font-size:1.4rem;
+  margin-bottom:30px;
 }
 
-button:hover {
-    background: #1d4ed8;
+.btn{
+  display:inline-block;
+  padding:16px 32px;
+  border-radius:999px;
+  background:linear-gradient(90deg,#2563eb,#06b6d4);
+  color:white;
+  text-decoration:none;
+}
+
+.section{
+  padding:120px 80px;
+}
+
+.section h2{
+  font-size:3rem;
+  margin-bottom:40px;
+}
+
+.cards{
+  display:flex;
+  gap:25px;
+}
+
+.card{
+  flex:1;
+  padding:40px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(20px);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
 }
