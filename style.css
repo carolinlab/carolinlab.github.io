@@ -55,9 +55,11 @@ nav a {
 }
 
 .hero-content h1 {
-    font-size: 5rem;
+    font-size: clamp(5rem, 9vw, 8rem);
     font-weight: 800;
     margin-bottom: 20px;
+    line-height: 0.95;
+    letter-spacing: -3px;
 }
 
 .hero-content p {
